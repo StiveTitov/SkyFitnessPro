@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         background: "#FAFAFA",
         black: "#000000",
-        white: "#000000",
+        white: "#FFFFFF",
         red: "#DB0030",
         lime: "#BCEC30",
         yellow: "#FFC700",
