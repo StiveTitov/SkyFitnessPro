@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        "roboto-400": "var(--font-roboto-400)",
+        "roboto-500": "var(--font-roboto-500)",
+        skyeng: "var(--font-skyeng)",
+      },
       colors: {
         background: "#FAFAFA",
         black: "#000000",
@@ -25,6 +30,7 @@ const config: Config = {
         purple: "#7D458C",
         "blue-dark": "#2491D2",
         "blue-light": "#00C1FF",
+        gray: "#D0CECE",
         "gray-light": "#F7F7F7",
       },
       boxShadow: {
