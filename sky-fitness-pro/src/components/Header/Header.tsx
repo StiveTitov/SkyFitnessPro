@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import logoImg from "./logo.svg"
 
-export default function Header() {
+type HeaderType={children: React.ReactNode}
+
+export default function Header({ children }: HeaderType) {
   return (
     <>
       <div className="bg-[#FFFFFF] py-14 flex justify-between">
@@ -16,6 +18,7 @@ export default function Header() {
         </div>
         <button>Войти</button>
       </div>
+      {children}
     </>
   )
 }
