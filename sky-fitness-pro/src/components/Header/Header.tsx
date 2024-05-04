@@ -14,7 +14,7 @@ export default function Header() {
           </Link>
           <p className="pt-3.5 text-[#585959]">Онлайн-тренировки для занятий дома</p>
         </div>
-        <button>Войти</button>
+        <button className="rounded-full w-full h-[52px] px-7 bg-[#BCEC30] text-lg text-[#000000] hover:bg-[#C6FF00] active:bg-[#000000] active:text-[#FFFFFF]">Войти</button>
       </div>
     </>
   )
