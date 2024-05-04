@@ -5,5 +5,5 @@ type WrapperType = {
 };
 
 export default function Wrapper({ children }: WrapperType) {
-  return <div className="bg-background mx-auto w-screen px-4 py-10 lg:w-[1440px] lg:px-[140px]  lg:pb-44 lg:pt-12">{children}</div>;
+  return <main className="bg-background mx-auto w-screen px-4 py-10 lg:w-[1440px] lg:px-[140px]  lg:pb-44 lg:pt-12">{children}</main>;
 }
