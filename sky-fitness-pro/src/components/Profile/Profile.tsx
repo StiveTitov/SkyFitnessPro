@@ -12,9 +12,8 @@ export default function Profile() {
                 <div
                     className="bg-[#FFFFFF]
                     rounded-[30px] 
-                 
-                w-[1160px] 
-                h-[257px]
+                    w-[1160px]
+                    h-[257px]
                 px-[30px]
                 py-[30px]">
                     <div className="flex flex-row space-x-[33px]">
