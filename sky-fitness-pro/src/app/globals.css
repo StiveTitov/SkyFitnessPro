@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d0cece;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,12 +35,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -31,6 +45,7 @@ body {
     text-wrap: balance;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -60,14 +75,24 @@ ul li {
   list-style: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
 @font-face {
   font-family: 'StratosSkyeng';
-  src: 
-  local("StratosSkyeng"), 
-  local("StratosSkyeng"), 
-  url("../../fonts/StratosSkyeng.woff2") format("woff2"), 
-  url("../../fonts/StratosSkyeng.woff") format("woff");
+  src:
+    local("StratosSkyeng"),
+    local("StratosSkyeng"),
+    url("../../fonts/StratosSkyeng.woff2") format("woff2"),
+    url("../../fonts/StratosSkyeng.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
