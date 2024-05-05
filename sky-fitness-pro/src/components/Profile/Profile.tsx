@@ -8,46 +8,52 @@ export default function Profile() {
     return (
         <>
             <div className="box-border bg-[#FAFAFA]">
-                <div className="mt-[0px] mb-[31px] text-[40px] font-bold">Профиль</div>
+                <div className="sm:mt-[0px] mt-[36px] sm:mb-[31px] mb-[19px] sm:text-[40px] text-[24px] font-bold">Профиль</div>
                 <div
                     className="bg-[#FFFFFF]
                     rounded-[30px] 
-                    w-[1160px]
-                    h-[257px]
-                px-[30px]
-                py-[30px]">
-                    <div className="flex flex-row space-x-[33px]">
-                        <Image
-                            className=""
-                            src="/img/no_foto.png"
-                            alt="no foto"
-                            width={197}
-                            height={197}
-                        />
-                        <div className="flex flex-col gap-[20px]">
-                            <div className="text-[32px] font-bold">
+                    sm:w-[1160px] w-[343px]
+                    sm:h-[257px] h-[453px]
+                    sm:px-[30px] px-[10px]
+                    py-[30px]">
+                    <div className="flex flex-wrap flex-row sm:space-x-[33px]">
+                        <div className="relative 
+                        sm:w-[197px] w-[141px] 
+                        sm:h-[197px] h-[141px]
+                        sm:mx-[0px] mx-[90px]">
+                            <Image
+                                fill
+                                src="/img/no_foto.png"
+                                alt="no foto"
+                            />
+                        </div>
+                        <div className="flex flex-col 
+                        sm:gap-[20px] gap-[13px]
+                        sm:mt-0 mt-[22px]
+                        sm:ml-0 ml-[19px]">
+                            <div className="sm:text-[32px] text-[24px] font-bold">
                                 Сергей
                             </div>
                             <div className="flex flex-col gap-[2px]">
-                                <p className="text-[18px]">Логин: sergey.petrov96</p>
-                                <p className="text-[18px]">Пароль: 4fkhdj880d</p>
+                                <p className="sm:text-[18px] text-[16px]">Логин: sergey.petrov96</p>
+                                <p className="sm:text-[18px] text-[16px]">Пароль: 4fkhdj880d</p>
                             </div>
-                            <div className="flex flex-row space-x-[10px]">
-                                <div className="w-[192px]">
+                            <div className="flex flex-wrap flex-row sm:space-x-[10px] space-x-0 sm:gap-0 gap-[15px]">
+                                <div className="sm:w-[192px] w-[283px]">
                                     <Button title="Изменить пароль" />
                                 </div>
-                                <div className="w-[192px]">
+                                <div className="sm:w-[192px] w-[283px]">
                                     <ButtonLink title="Выйти" link="/" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="mt-[53px] mb-[31px] text-[40px] font-bold">Мои курсы</div>
-                <div className="flex flex-row gap-[41px]">
-                    <CourseCard/>
-                    <CourseCard/>
-                    <CourseCard/>
+                <div className="sm:mt-[53px] mt-[23px] sm:mb-[31px] mb-[12px] sm:text-[40px] text-[24px] font-bold">Мои курсы</div>
+                <div className="flex flex-wrap flex-row gap-[41px]">
+                    <CourseCard />
+                    <CourseCard />
+                    <CourseCard />
                 </div>
             </div>
         </>
