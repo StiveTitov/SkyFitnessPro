@@ -3,13 +3,12 @@ import Button from "@/components/Button/Button";
 import Title from "@/components/Title/Title";
 import VideoComponent from "@/components/Video/Video";
 import WorkoutProgress from "@/components/WorkoutProgress/WorkoutProgress";
-import Wrapper from "@/components/Wrapper/Wrapper";
 import { breadcrumbsItems, workoutProgress } from "@/lib/data";
 import { Suspense } from "react";
 
 export default function WorkoutPage() {
   return (
-    <Wrapper>
+    <>
       <section>
         <Title label={"Йога"} />
         <Breadcrumbs
@@ -39,6 +38,6 @@ export default function WorkoutPage() {
           <Button title="Заполнить свой прогресс" />
         </div>
       </section>
-    </Wrapper>
+    </>
   );
 }
