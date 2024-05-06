@@ -71,9 +71,9 @@ button,
   cursor: pointer;
 }
 
-ul li {
+/* ul li {
   list-style: none;
-}
+} */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
