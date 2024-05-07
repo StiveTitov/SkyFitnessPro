@@ -44,3 +44,43 @@ export default function Header() {
     </>
   )
 }
+{/* <section className="rounded-[30px] p-[40px] lg:p-10 bg-white shadow-def md:mt-[302px] lg:mt-[102px]">
+<div className="relative flex flex-col-reverse ">
+  <div className="w-[465px] flex flex-col ">
+    <h2 className="text-[60px] text-black font-roboto-500 leading-none mb-[28px]">
+      Начните путь <br /> к новому телу
+    </h2>
+    <div className="mb-[28px] h-[178px]">
+      {workoutDescription.map((el) => {
+        return (<>
+          <ul className="flex flex-col list-inside">
+            <li className="list-disc font-roboto-400 text-2xl text-[#585959] pl-6" key={el}>{el}</li>
+          </ul>
+        </>)
+      })}
+    </div>
+    <Button title="Добавить курс" />
+  </div>
+  <div className="w-auto">
+    <Image
+      className="absolute lg:-bottom-[20px] lg:right-[30px] lg:z-10 
+      md:-bottom-[20px] md:right-[30px] md:z-20              "
+      src="/img/Runner.svg"
+      alt="runner"
+      width={519}
+      height={539} />
+    <Image
+      className="absolute lg:right-[400px] md:right-[400px]"
+      src="/img/blackLine.png"
+      alt="black line"
+      width={50}
+      height={42} />
+    <Image
+      className="absolute lg:-bottom-[100px] lg:-right-[20px] lg:z-0"
+      src="/img/greenLine.png"
+      alt="green line"
+      width={655}
+      height={390} />
+  </div>
+</div>
+</section > */}
