@@ -8,7 +8,7 @@ export default function Profile() {
     return (
         <>
             <div className="box-border bg-[#FAFAFA]">
-                <div className="sm:mt-[0px] mt-[36px] sm:mb-[31px] mb-[19px] sm:text-[40px] text-[24px] font-bold">Профиль</div>
+                <div className="sm:font-roboto-600 font-roboto-500 sm:mt-[0px] mt-[36px] sm:mb-[31px] mb-[19px] sm:text-[40px] text-[24px] font-bold">Профиль</div>
                 <div
                     className="bg-[#FFFFFF]
                     rounded-[30px] 
@@ -31,12 +31,12 @@ export default function Profile() {
                         sm:gap-[20px] gap-[13px]
                         sm:mt-0 mt-[22px]
                         sm:ml-0 ml-[19px]">
-                            <div className="sm:text-[32px] text-[24px] font-bold">
+                            <div className="font-roboto-500 sm:text-[32px] text-[24px] font-bold">
                                 Сергей
                             </div>
                             <div className="flex flex-col gap-[2px]">
-                                <p className="sm:text-[18px] text-[16px]">Логин: sergey.petrov96</p>
-                                <p className="sm:text-[18px] text-[16px]">Пароль: 4fkhdj880d</p>
+                                <p className="font-roboto-400 sm:text-[18px] text-[16px]">Логин: sergey.petrov96</p>
+                                <p className="font-roboto-400 sm:text-[18px] text-[16px]">Пароль: 4fkhdj880d</p>
                             </div>
                             <div className="flex flex-wrap flex-row sm:space-x-[10px] space-x-0 sm:gap-0 gap-[15px]">
                                 <div className="sm:w-[192px] w-[283px]">
@@ -49,7 +49,7 @@ export default function Profile() {
                         </div>
                     </div>
                 </div>
-                <div className="sm:mt-[53px] mt-[23px] sm:mb-[31px] mb-[12px] sm:text-[40px] text-[24px] font-bold">Мои курсы</div>
+                <div className="sm:font-roboto-600 font-roboto-500 sm:mt-[53px] mt-[23px] sm:mb-[31px] mb-[12px] sm:text-[40px] text-[24px] font-bold">Мои курсы</div>
                 <div className="flex flex-wrap flex-row gap-[41px]">
                     <CourseCard />
                     <CourseCard />
