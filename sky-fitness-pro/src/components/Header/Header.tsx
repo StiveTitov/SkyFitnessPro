@@ -36,7 +36,7 @@ export default function Header() {
               <SVG icon="icon-user" className="w-[42px] h-[42px]" />
               <div className="flex items-center">
                 <p className="hidden md:block text-2xl font-roboto-400 pr-[11px]">Сергей</p>
-                <SVG icon="icon-arrow" className="w-[14px] h-[9px]" />
+               <SVG icon="icon-arrow" className={isOpen ? "w-[14px] h-[9px] rotate-180" : "w-[14px] h-[9px]"} />
               </div>
             </div>
             {isOpen && ( <DropDown />)}
