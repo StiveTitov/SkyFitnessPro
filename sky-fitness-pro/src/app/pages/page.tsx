@@ -1,12 +1,14 @@
 import Button from "@/components/Button/Button";
 import CourseCard from "@/components/CourseCard/CourseCard";
+import Link from "next/link";
 
 export default function MainCoursesPage() {
   return (
     <>
-      <div className="flex flex-row mb-[58px] items-end space-x-7">
+      <div id="top" className="flex flex-row mb-[58px] items-end space-x-7">
         <h1 className="font-roboto-500 text-[32px] md:text-[40px]/[60px] xl:text-[60px]/[60px] text-pretty">
-          Начните заниматься спортом<br /> и улучшите качество жизни
+          Начните заниматься спортом
+          <br /> и улучшите качество жизни
         </h1>
         <svg className="hidden sm:block sm:h-[120px]">
           <use xlinkHref={`/img/sprite.svg#icon-notice`}></use>
@@ -19,9 +21,11 @@ export default function MainCoursesPage() {
         <CourseCard />
         <CourseCard />
       </div>
-      <div className="flex self-center w-[140px]">
-        <Button title="Наверх &#8593;" />
+      <div className="flex self-center w-[140px] mt-8">
+        <Link href="#top">
+          <Button title="Наверх &#8593;" />
+        </Link>
       </div>
     </>
-  )
+  );
 }
